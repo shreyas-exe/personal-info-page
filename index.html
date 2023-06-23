@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="text-box">
+        <h2 style="color: white">Personal Information</h2>
+        <h2 style="color: grey; font-weight: 300">
+          Use a permanent address where you can receive mail.
+        </h2>
+      </div>
+      <form action="#">
+        <div class="img-section">
+          <img src="./pfp.jpg" alt="pfp" id="pfp" />
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              height: 60%;
+              justify-content: space-around;
+            "
+          >
+            <input
+              type="file"
+              name="pfp-input"
+              id="pfp-input"
+              accept="image/png, image/jpg"
+            />
+            <h6 style="color: whitesmoke; font-weight: 500">
+              JPG, GIF or PNG. 1MB max.
+            </h6>
+          </div>
+        </div>
+        <div class="name-section">
+          <div class="name">
+            <label for="fname">First name</label>
+            <input type="text" name="fname" id="fname" />
+          </div>
+          <div class="name">
+            <label for="lname">Last name</label>
+            <input type="text" name="lname" id="lname" />
+          </div>
+        </div>
+        <div class="email-section">
+          <div class="email">
+            <label for="email">Email address</label>
+            <input type="text" name="email" id="email" />
+          </div>
+        </div>
+        <div class="username-section">
+          <div class="username">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              value="example/ vedantlad2005 "
+              style="color: rgb(128, 128, 128)"
+            />
+          </div>
+        </div>
+        <div class="timezone-section">
+          <div class="timezone">
+            <label for="timezone">Timezone</label>
+            <select name="timezone" id="timezone">
+              <option value="pst">Pacific Standard Time</option>
+              <option value="ist">India Standard Time</option>
+              <option value="akst">Alaska Time Zone</option>
+              <option value="ast">Atlantic Time Zone</option>
+              <option value="gmt">Greenwich Mean Time</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit">Save</button>
+      </form>
+    </div>
+  </body>
+  <script src="./app.js"></script>
+</html>
